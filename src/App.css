@@ -1,0 +1,870 @@
+html, body {
+  margin: 0;
+  font-family: FuturaPT, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  background-color: rgb(244, 242, 245);
+  }
+  p,h2,h3,h1,h4{
+    margin: 0;
+    padding: 0;
+  }
+  .Homefirst{
+    min-height: 123vh;
+    width: 100vw;
+    position: relative;
+    }
+    .homeimg{
+      position: relative;
+      min-height: 100vh;
+      width: 100%;
+      background: linear-gradient(90deg, #261b3e 0%, rgba(38, 27, 62, 0.12) 75.35%),url("../4043\ \(1\)\ 2\ 1.png") no-repeat center/cover;
+    }
+
+.header{
+  width: 100%;
+  height:13vh;
+  backdrop-filter: blur(60px);
+  background: rgba(255,255,255,.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logoanddrop{
+  width: 25%;
+  height: 100%;
+  display: flex;
+}
+.logocar{
+  width: 50%;
+  height: 100%;
+  display: flex
+;
+  justify-content: center;
+  align-items: center;
+  }
+  .logocar img{
+    height: 45%;
+  }
+.menubar{
+  width: 50%;
+  height: 100%;
+}
+.buttons{
+  width: 25%;
+  height: 100%;
+  display: flex;
+}
+
+.drop{
+  width: 40%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttonlocation{
+  width: 85%;
+  height: 43%;
+  background: #48095c;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.icon{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+}
+.selectbutton{
+  background: transparent;
+  border: none;
+  color: white;
+  width: 77%;
+  cursor: pointer;
+}
+
+.menubar{
+  padding: 0px 10%;
+  width: 38%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.menubarselectbutton{
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  height: 26%;
+  color: white;
+}
+.menubarselectbutton:hover{
+  color:#48095c;
+  cursor: pointer;
+}
+.heatbellicon{
+  color: #48095c;
+    font-size: 1.2rem;
+}
+.Loginbutton{
+  color:#48095c;
+  background: transparent;
+  border:2px solid #48095c; 
+  border-radius: 7px;
+  font-size: 1.1rem;
+  width: 45%;
+  height: 43%;
+}
+.Loginbutton:hover{
+    cursor: pointer;
+    background: #48095c;
+    color: white;
+}
+.Signupbutton{
+  color:#48095c;
+  background: transparent;
+  border:2px solid #48095c; 
+  border-radius: 7px;
+  font-size: 1.1rem;
+  width: 45%;
+  height: 43%;
+}
+.Signupbutton:hover{
+  background: #48095c;
+  color: white;
+  cursor: pointer;
+}
+.buttonicon{
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.buttonicon i:hover{
+  cursor: pointer;
+
+}
+.loginsignupbutton{
+  height: 100%;
+    width: 59%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Headline{
+    height: 86%;
+    width: 98%;
+    position: absolute;
+}
+.headlineimg{
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 40px;
+}
+.headlineimg h2{
+  font-size: 2rem;
+  color: white;
+  font-weight: 600;
+}
+.headlineimg h3{
+  color: yellow;
+  font-size: 2.8rem;
+  margin-top: 4px;
+}
+.headlineimg small{
+  color: white;
+}
+.headlineimg p{
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+.buttonBuycarsellcar{
+  height: 14%;
+  margin-top: 28px;
+ 
+}
+.Buycarbutton{
+  margin-right: 30px;
+  width: 9%;
+  height: 36%;
+  background: transparent;
+  border-radius: 6px;
+  font-size: 1rem;
+  border: 2px solid yellow;
+  color: yellow;
+
+}
+.Buycarbutton:hover{
+  background: yellow;
+  color: black;
+  cursor: pointer;
+}
+.sellcarbutton{
+  width: 9%;
+  height: 36%;
+  background: transparent;
+  border-radius: 6px;
+  font-size: 1rem;
+  border: 2px solid yellow;
+  color: yellow;
+}
+.sellcarbutton:hover{
+  background: yellow;
+  color: black;
+  cursor: pointer;
+}
+.carsearchmenu{
+height: 24%;
+width: 100%;
+position: absolute;
+bottom: 5px;
+display: flex;
+justify-content: center;
+}
+.subcarsearchmenu{
+  height: 76%;
+  width: 47%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+  display: flex;
+  border-radius: 7px;
+  background-color: white;
+  justify-content: center;
+  flex-direction: column;
+}
+.button{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchbar{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputsearchcar{
+  width: 80%;
+  height: 54%;
+  display: flex;
+  border: 2px solid #9d9d9d;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+}
+.searchicon i{
+  color: #9d9d9d;
+  font-size: 1.4rem;
+  height: 59%;
+    width: 70%;
+    border: none;
+    margin-right: 3px;
+}
+.inputsearch{
+  width: 66%;
+  height: 59%;
+  border: none;
+  font-size: 1.2rem;
+}
+.inputsearch:focus-visible{
+  outline: none;
+}
+.searchbutton{
+  background: #812ba7;
+  border: none;
+  color: white;
+  height: 78%;
+  width: 17%;
+  border-radius: 6px;
+  font-size: 1.1rem;
+}
+.searchbutton:hover{
+  cursor: pointer;
+  background: #53186d; 
+}
+.buttoncar{
+  border: 2px solid #812ba7;
+  color: #812ba7;
+  background: transparent;
+  height: 47%;
+  width: 15%;
+  border-radius: 5px;
+  margin: 0px 8px;
+  font-size: 0.9rem;
+}
+.buttoncar:hover{
+  border: none;
+  color: white;
+  background: #812ba7;
+  height: 47%;
+  width: 15%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.HomeSecond{
+  height: 179vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards{
+  height: 95%;
+  box-shadow: 0 5px 15px rgba(0,0,0,.3);
+  width: 90%;
+  background-color: white;
+}
+.cardsone{
+  height: 50%;
+  width: 100%;
+}
+.cardstwo{
+  height: 50%;
+  width: 100%;
+}
+.tagline{
+  height: 9%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.tagline h2{
+  margin-left: 30px;
+  font-size: 1.6rem;
+}
+.maincard{
+  display: flex
+;
+    justify-content: space-between;
+    width: 96%;
+    height: 95%;
+    margin: 0px 28px;
+}
+.subonecards{
+  width: 30%;
+  height: 90%;
+  margin-top: 12px;
+  background: #ebdaff;
+  border: 5px solid #d4c6e4;
+  border-radius: 13px;
+}
+.subtwocards{
+  width: 60%;
+  height: 90%;
+  margin-top: 12px;
+  background: #ebdaff;
+  border: 5px solid #d4c6e4;
+  border-radius: 13px;
+}
+.taglinecardone{
+  width: 100%;
+  height: 24%;
+  position: relative;
+}
+.taglinecardoneicon img{
+  width: 100%;
+  height: 100%;
+}
+.Accountabilityimg{
+  position: absolute;
+  bottom: 1px;
+  right: -67px;
+}
+.taglinecardoneicon{
+  width: 21%;
+  position: absolute;
+  height: 65%;
+  top: 9px;
+  left: 20px;
+}
+.taglinecardone h2{
+  position: absolute;
+  top: 32px;
+  left: 27%;
+  font-size: 1.4rem;
+  color: #48095c;
+
+}
+.onecardparagraph{
+  margin-right: 67px;
+  height: 77%;
+  position: relative;
+  margin-left: 16px;
+}
+.onecardparagraph p{
+  color: #000000cc;
+  font-size: 1rem;
+}
+.onecardparagraph small{
+  font-size: 1rem;
+  color: #48095c;
+  font-weight: 200;
+}
+.onecardparagraphtwo{
+  margin-top: 6px;
+}
+.onecardparagraphthree{
+  margin-top: 26px;
+}
+.onecardparagraphfour{
+  margin-top: 6px;
+
+}
+.taglinecardtwo{
+  width: 100%;
+  height: 21%;
+  position: relative;
+  display: flex
+;
+}
+.taglinecardtwoicon{
+  width: 10%;
+  position: absolute;
+  height: 67%;
+  top: 9px;
+  left: 16px;
+  display: flex
+;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #7946c6;
+  border-radius: 7px;
+}
+.taglinecardtwoicon img{
+  width: 90%;
+  height: 90%;
+}
+.taglinecardtwo h2{
+  position: absolute;
+  top: 29px;
+  left: 13%;
+  font-size: 1.4rem;
+  color: #48095c;
+}
+.twocardparagraph{
+  margin-right: 108px;
+  height: 78%;
+  margin-left: 16px;
+  position: relative;
+}
+.Personalisedimg{
+  position: absolute;
+  width: 40%;
+  height: 60%;
+  bottom: 0px;
+  right: -108px;}
+  .Personalisedimg img{
+    width: 100%;
+    height: 100%;
+  }
+
+.twocardparagraph p{
+  color: #000000cc;
+  font-size: 1rem;
+}
+.twocardparagraph small{
+  font-size: 1rem;
+  color: #48095c;
+  font-weight: 200;
+}
+.twocardparagraphtwo{
+  margin-top: 6px;
+}
+.twocardparagraphthree{
+  margin-top: 26px;
+}
+.twocardparagraphfour{
+  margin-top: 6px;
+
+}
+.taglinecardsuboneicon{
+  width: 11%;
+  height: 76%;
+  position: absolute;
+  top: 10px;
+  left: 18px;
+}
+.taglinecardsuboneicon img{
+  width: 100%;
+  height: 100%;
+}
+.taglinecardonepart{
+  width: 100%;
+  height: 20%;
+  position: relative;
+}
+.taglinecardonepart h2{
+  position: absolute;
+  top: 37px;
+  left: 14%;
+  font-size: 1.4rem;
+  color: #48095c;
+}
+.taglinecardsubtwoicon{
+  width: 21%;
+  height: 76%;
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #7946c6;
+  border-radius: 7px;
+}
+.taglinecardsubtwoicon img{
+  width: 85%;
+  height: 85%;
+}
+.taglinecardtwopart{
+  width: 100%;
+  height: 20%;
+  position: relative;
+}
+.taglinecardtwopart h2{
+  position: absolute;
+  top: 37px;
+  left: 28%;
+  font-size: 1.4rem;
+  color: #48095c;
+}
+.onepartcardparagraph{
+  margin-right: 68px;
+  height: 80%;
+  position: relative;
+  margin-left: 16px;
+}
+.Transparencyimg{
+  width: 40%;
+  height: 60%;
+  bottom: 0px;
+  position: absolute;
+  right: -78px;
+}
+
+.onepartcardparagraph p{
+  color: #000000cc;
+  font-size: 1rem;
+}
+.onepartcardparagraph small{
+  font-size: 1rem;
+  color: #48095c;
+  font-weight: 200;
+}
+.onepartcardparagraphtwo{
+  margin-top: 6px;
+}
+.onepartcardparagraphthree{
+  margin-top: 7px;
+}
+.onepartcardparagraphfour{
+  margin-top: 33px;
+}
+.twopartcardparagraph{
+  margin-right: 68px;
+  height: 80%;
+  margin-left: 16px;
+  position: relative;
+}
+.Qualityimg{
+  width: 61%;
+  height: 40%;
+  bottom: 0px;
+  position: absolute;
+  right: -68px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Qualityimg img{
+width: 90%;
+height: 90%;
+}
+.twopartcardparagraph p{
+  color: #000000cc;
+  font-size: 1rem;
+}
+.twopartcardparagraph small{
+  font-size: 1rem;
+  color: #48095c;
+  font-weight: 200;
+}
+.twopartcardparagraphtwo{
+  margin-top: 20px;
+}
+.HomeFourth{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  align-items: center;
+}
+.carslogo{
+  height: 70%;
+  width: 80%;
+  display: grid
+;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+  background: #422974;
+  position: relative;
+  border-radius: 19px;
+}
+.one {
+  border-radius: 16px 0px 0px 0px;
+  border: 1px solid #7a429c;
+}
+.two{
+  border-radius: 0px 16px 0px 0px;
+}
+.four{
+  border-radius: 0px 0px 16px 0px;
+
+}
+.three{
+  border-radius: 0px 0px 0px 16px;
+}
+.box{
+  border: 1px solid #7a429c;
+}
+.Homefourthtag{
+  position: absolute;
+    width: 100%;
+    height: 21%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.3rem;
+}
+.cardlogoCintainer{
+  position: absolute;
+  width: 100%;
+  height: 78%;
+  display: flex;
+  align-items: center;
+  top: 109px;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  flex-direction: column;
+}
+.onecardcar{
+  width: 100%;
+  height: 100%;
+  display: flex;  
+  justify-content: space-evenly;
+}
+.twocardcar{
+  width: 100%;
+  height: 100%;
+  display: flex;  
+  justify-content: space-evenly;
+}
+.cardcontainernameimg{
+  background: white;
+  height: 87%;
+  width: 15%;
+  text-align: center;
+  border-radius: 8px;
+ 
+}
+.carimg{
+  height: 86%;
+  width: 100%;
+}
+.carimg img{
+  width: 100%;
+  height: 100%;
+}
+.HomeFifth{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+.Dealinindia{
+  width: 70%;
+  height: 88%;
+  box-shadow: 0 5px 15px rgba(0,0,0,.3);
+  background-color: white;
+  display: flex
+  ;
+      justify-content: center;
+      align-items: center;
+}
+.subdealing{
+  width: 95%;
+  height: 90%;
+
+}
+.taglindealing h2{
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+.MainCardcity{
+  display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: space-between;
+      flex-wrap: wrap;
+}
+.cardCity{
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+  background-color: white;
+  width: 15%;
+  height: 42%;
+  display: flex
+;
+border-radius: 7px;
+  flex-direction: column;
+  margin: 0px 55px 0px 0px;
+}
+.cityimg{
+  height: 85%;
+  display: flex
+;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.cityimg img{
+  width: 90%;
+  height: 90%;
+}
+.cityname h2{
+  font-size: 1.2rem;
+  color: #6e3697;
+  text-align: center;
+}
+.footer{
+  height: 34vh;
+  width: 100vw;
+  display: flex;
+  background: #422974;
+}
+  .logoanddescripation{
+    width: 47%;
+  }
+  .ourcomapny{
+    width: 21%;
+  }
+  .legeals{
+    width: 21%;
+    color: white;
+    position: relative;
+  }
+  .legeals h2{
+    position: absolute;
+    top: 49px;
+  }
+.socailicon{
+  width: 10%;
+  position: relative;
+  }
+  .logoanddescripation{
+    width: 47%;
+  }
+  .logo{
+    width: 100%;
+    height: 33%;
+    position: relative;
+    }
+    .logo img{
+      position: absolute;
+      bottom: 0;
+      left: 11px;
+    }
+  .descripation{
+    height: 58%;
+    color: #c7a4db;
+    font-weight: 100;
+  }
+  .descripation p{
+    margin-left: 15px;
+    margin-right: 200px;
+    margin-top: 12px;
+  }
+  .email{
+    display: flex;
+    margin-top: 13px;
+  }
+  .email:hover{
+    cursor: pointer;
+    color: white;
+  }
+  .mailicon{
+    margin-left: 16px;
+    margin-top: 12px;
+  }
+  .email a{
+    text-decoration: none;
+    color: #c7a4db;
+  }
+  .email p{
+    margin-left: 14px;
+  }
+  .ourcomapny{
+    width: 21%;
+    position: relative;
+    color: white;
+  }
+  .ourcomapny h2{
+    position: absolute;
+    top: 49px;
+  }
+  .homemenubar{
+    position: absolute;
+    top: 88px;
+    color: #c7a4db;
+  }
+  .homemenu:hover{
+    cursor: pointer;
+    color: white;
+  }
+  .homemenu{
+    margin-bottom: 8px  }
+    .inst{
+      font-size: 1.6rem;
+      color: white;
+      position: absolute;
+      top: 26px;
+      left: 10px;
+    }
+    .facebook{
+      font-size: 1.6rem;
+      color: white;
+      position: absolute;
+      top: 26px;
+      left: 44px;
+    }
+    .facebook:hover{
+      color: #c7a4db;
+    }
+    
+    .inst:hover{
+      color: #c7a4db;
+    }
+    
+    .twitter:hover{
+      color: #c7a4db;
+    }
+    .socailicon a:hover{
+      cursor: pointer;
+    }
+    .twitter{
+      color: white;
+      font-size: 2rem;
+      position: absolute;
+      top: 19px;
+      left: 72px;
+    }
