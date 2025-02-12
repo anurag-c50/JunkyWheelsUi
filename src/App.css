@@ -15,6 +15,9 @@ html, body {
     width: 100vw;
     position: relative;
     }
+    .phonemenubar{
+      display: none;
+    }
     .homeimg{
       position: relative;
       min-height: 100vh;
@@ -28,7 +31,7 @@ html, body {
   backdrop-filter: blur(60px);
   background: rgba(255,255,255,.1);
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 .logoanddrop{
@@ -47,10 +50,6 @@ html, body {
   .logocar img{
     height: 45%;
   }
-.menubar{
-  width: 50%;
-  height: 100%;
-}
 .buttons{
   width: 25%;
   height: 100%;
@@ -65,13 +64,14 @@ html, body {
   align-items: center;
 }
 .buttonlocation{
-  width: 85%;
-  height: 43%;
+  width: 83%;
+  height: auto;
   background: #48095c;
   display: flex;
   justify-content: center;
   cursor: pointer;
   border-radius: 6px;
+  padding: 14px 0px;
 }
 .icon{
   color: white;
@@ -89,11 +89,16 @@ html, body {
 }
 
 .menubar{
-  padding: 0px 10%;
-  width: 38%;
+  width: 50%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 41px;
+}
+@media screen and (max-width: 1149px) {
+  .menubar {
+    gap: 20px;
+  }
 }
 .menubarselectbutton{
   background: transparent;
@@ -111,13 +116,12 @@ html, body {
     font-size: 1.2rem;
 }
 .Loginbutton{
-  color:#48095c;
+  color: #48095c;
   background: transparent;
-  border:2px solid #48095c; 
+  border: 2px solid #48095c;
   border-radius: 7px;
   font-size: 1.1rem;
-  width: 45%;
-  height: 43%;
+  padding: 10px 26px;
 }
 .Loginbutton:hover{
     cursor: pointer;
@@ -125,13 +129,13 @@ html, body {
     color: white;
 }
 .Signupbutton{
-  color:#48095c;
+  color: #48095c;
   background: transparent;
-  border:2px solid #48095c; 
+  border: 2px solid #48095c;
   border-radius: 7px;
   font-size: 1.1rem;
-  width: 45%;
-  height: 43%;
+
+  padding: 10px 26px;
 }
 .Signupbutton:hover{
   background: #48095c;
@@ -155,6 +159,12 @@ html, body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 12%;
+}
+@media screen and (max-width: 1173px) {
+  .loginsignupbutton {
+    gap: 4%;
+  }
 }
 .Headline{
     height: 86%;
@@ -188,20 +198,19 @@ html, body {
   font-weight: 200;
 }
 .buttonBuycarsellcar{
-  height: 14%;
+  height: auto;
   margin-top: 28px;
- 
+ display: flex;
+ justify-content: flex-start;
+ gap: 20px;
 }
 .Buycarbutton{
-  margin-right: 30px;
-  width: 9%;
-  height: 36%;
   background: transparent;
   border-radius: 6px;
   font-size: 1rem;
   border: 2px solid yellow;
   color: yellow;
-
+  padding: 22px 50px;
 }
 .Buycarbutton:hover{
   background: yellow;
@@ -209,13 +218,12 @@ html, body {
   cursor: pointer;
 }
 .sellcarbutton{
-  width: 9%;
-  height: 36%;
   background: transparent;
   border-radius: 6px;
   font-size: 1rem;
   border: 2px solid yellow;
   color: yellow;
+  padding: 22px 50px;
 }
 .sellcarbutton:hover{
   background: yellow;
@@ -230,10 +238,55 @@ bottom: 5px;
 display: flex;
 justify-content: center;
 }
+@media screen and (max-width: 980px) {
+  .logoanddrop{
+    display:none;
+  }
+  .menubar{
+    display:none;
+  }
+  .buttons{
+    display:none;
+  }
+  .phonemenubar{
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex
+;
+  }
+  .menuicon{
+    width: 50%;
+    display: flex
+;
+    justify-content: flex-start;
+    margin-left: 9px;
+  }
+  .menuicon img{
+    width: 32px;
+  }
+  .threebutton{
+    width: 50%;
+    display: flex
+;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+  }
+  .loginsihnup{
+    display: flex;
+    gap:4%;
+  }
+  }
+@media screen and (max-width: 900px) {
+.carsearchmenu{
+  display:none;
+}
+}
 .subcarsearchmenu{
   height: 76%;
-  width: 47%;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+  padding: 1px 44px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
   display: flex;
   border-radius: 7px;
   background-color: white;
@@ -297,8 +350,7 @@ justify-content: center;
   border: 2px solid #812ba7;
   color: #812ba7;
   background: transparent;
-  height: 47%;
-  width: 15%;
+  padding: 10px;
   border-radius: 5px;
   margin: 0px 8px;
   font-size: 0.9rem;
@@ -320,23 +372,24 @@ justify-content: center;
   align-items: center;
 }
 .cards{
-  height: 95%;
-  box-shadow: 0 5px 15px rgba(0,0,0,.3);
-  width: 90%;
+  padding: 20px;
+  display: flex
+;
   background-color: white;
+  flex-direction: column;
+  gap: 34px;
+  width: 90%;
 }
 .cardsone{
-  height: 50%;
+  height: auto;
   width: 100%;
 }
 .cardstwo{
-  height: 50%;
+  height: auto%;
   width: 100%;
 }
 .tagline{
-  height: 9%;
-  display: flex;
-  flex-direction: column-reverse;
+padding: 19px;
 }
 .tagline h2{
   margin-left: 30px;
@@ -344,63 +397,72 @@ justify-content: center;
 }
 .maincard{
   display: flex
-;
-    justify-content: space-between;
-    width: 96%;
-    height: 95%;
-    margin: 0px 28px;
+  ;
+      justify-content: space-around;
+      height: 100%;
 }
 .subonecards{
   width: 30%;
   height: 90%;
-  margin-top: 12px;
   background: #ebdaff;
   border: 5px solid #d4c6e4;
   border-radius: 13px;
+  gap: 19px;
+  display: flex
+;
+  flex-direction: column;
+
 }
 .subtwocards{
   width: 60%;
   height: 90%;
-  margin-top: 12px;
   background: #ebdaff;
   border: 5px solid #d4c6e4;
   border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+    align-items: center;
+    gap: 15px
 }
 .taglinecardone{
   width: 100%;
-  height: 24%;
-  position: relative;
+  height: auto;
+  display: flex
+;
+margin-top: 6px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
 }
 .taglinecardoneicon img{
   width: 100%;
   height: 100%;
 }
 .Accountabilityimg{
-  position: absolute;
-  bottom: 1px;
-  right: -67px;
+  display: flex
+  ;
+      justify-content: flex-end;
 }
 .taglinecardoneicon{
   width: 21%;
-  position: absolute;
-  height: 65%;
-  top: 9px;
-  left: 20px;
+  margin-left: 19px;
 }
 .taglinecardone h2{
-  position: absolute;
-  top: 32px;
-  left: 27%;
   font-size: 1.4rem;
   color: #48095c;
 
 }
 .onecardparagraph{
-  margin-right: 67px;
-  height: 77%;
-  position: relative;
-  margin-left: 16px;
+    height: 83%;
+    position: relative;
+    display: flex
+;
+    flex-direction: column;
+    justify-content: space-between;
 }
+.onecardparagraphall{margin-left: 19px;
+margin-right: 32px;}
 .onecardparagraph p{
   color: #000000cc;
   font-size: 1rem;
@@ -422,52 +484,49 @@ justify-content: center;
 }
 .taglinecardtwo{
   width: 100%;
-  height: 21%;
-  position: relative;
+  height: auto;
   display: flex
+;
+  margin-top: 6px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
 ;
 }
 .taglinecardtwoicon{
-  width: 10%;
-  position: absolute;
-  height: 67%;
-  top: 9px;
-  left: 16px;
+  width: 8%;
+  margin-left: 19px;
+  border: 2px solid #8641db;
   display: flex
 ;
   justify-content: center;
-  align-items: center;
-  border: 3px solid #7946c6;
-  border-radius: 7px;
+  padding: 5px 1px;
 }
 .taglinecardtwoicon img{
   width: 90%;
   height: 90%;
 }
 .taglinecardtwo h2{
-  position: absolute;
-  top: 29px;
-  left: 13%;
+
   font-size: 1.4rem;
   color: #48095c;
 }
 .twocardparagraph{
-  margin-right: 108px;
-  height: 78%;
-  margin-left: 16px;
+  height: 83%;
   position: relative;
+  display: flex
+;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .Personalisedimg{
-  position: absolute;
-  width: 40%;
-  height: 60%;
-  bottom: 0px;
-  right: -108px;}
-  .Personalisedimg img{
-    width: 100%;
-    height: 100%;
-  }
-
+  display: flex;
+  justify-content: flex-end;
+}
+.twocardparagraphall{
+  margin-left: 18px;
+    margin-right: 12px;
+}
 .twocardparagraph p{
   color: #000000cc;
   font-size: 1rem;
@@ -490,9 +549,6 @@ justify-content: center;
 .taglinecardsuboneicon{
   width: 11%;
   height: 76%;
-  position: absolute;
-  top: 10px;
-  left: 18px;
 }
 .taglinecardsuboneicon img{
   width: 100%;
@@ -500,56 +556,58 @@ justify-content: center;
 }
 .taglinecardonepart{
   width: 100%;
-  height: 20%;
-  position: relative;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 35px;
+  gap: 14px;
 }
 .taglinecardonepart h2{
-  position: absolute;
-  top: 37px;
-  left: 14%;
   font-size: 1.4rem;
   color: #48095c;
 }
 .taglinecardsubtwoicon{
   width: 21%;
   height: 76%;
-  position: absolute;
-  top: 10px;
-  left: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding:6px 1px;
   border: 3px solid #7946c6;
   border-radius: 7px;
 }
-.taglinecardsubtwoicon img{
-  width: 85%;
-  height: 85%;
-}
 .taglinecardtwopart{
   width: 100%;
-  height: 20%;
-  position: relative;
+  height: auto;
+  display: flex
+;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 35px;
+  gap: 14px;
 }
 .taglinecardtwopart h2{
-  position: absolute;
-  top: 37px;
-  left: 28%;
   font-size: 1.4rem;
   color: #48095c;
 }
 .onepartcardparagraph{
-  margin-right: 68px;
-  height: 80%;
+  height: 84%;
+  display: flex
+;
   position: relative;
-  margin-left: 16px;
+  flex-direction: column;
+  justify-content: space-between
 }
 .Transparencyimg{
-  width: 40%;
-  height: 60%;
-  bottom: 0px;
-  position: absolute;
-  right: -78px;
+display: flex ;
+    height: 51%;
+justify-content: flex-end;
+}
+
+.onepartcardparagraphoneall{
+  margin-left: 19px;
+  margin-right: 34px;
 }
 
 .onepartcardparagraph p{
@@ -571,25 +629,22 @@ justify-content: center;
   margin-top: 33px;
 }
 .twopartcardparagraph{
-  margin-right: 68px;
   height: 80%;
   margin-left: 16px;
   position: relative;
 }
+.twopartcardparagraphall{
+  margin-right: 68px;
+
+}
 .Qualityimg{
-  width: 61%;
-  height: 40%;
-  bottom: 0px;
-  position: absolute;
-  right: -68px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex
+  ;
+  height: 51%;
+      justify-content: flex-end;
+      align-items: center;
 }
-.Qualityimg img{
-width: 90%;
-height: 90%;
-}
+
 .twopartcardparagraph p{
   color: #000000cc;
   font-size: 1rem;
@@ -602,6 +657,52 @@ height: 90%;
 .twopartcardparagraphtwo{
   margin-top: 20px;
 }
+@media screen and (max-width: 1050px) {
+  .HomeSecond {
+    height: 280vh;
+    width: 100vw;
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+}
+.maincard {
+  display: flex
+;
+  justify-content: center;
+  height: auto;
+  align-items: center;
+  gap: 19px;
+  flex-direction: column;
+}
+.subonecards {
+  width: 88%;
+  height: 90%;
+  background: #ebdaff;
+  border: 5px solid #d4c6e4;
+  border-radius: 13px;
+  gap: 19px;
+  display: flex
+;
+  flex-direction: column;
+}
+.subtwocards {
+  width: 88%;
+  height: 90%;
+  background: #ebdaff;
+  border: 5px solid #d4c6e4;
+  border-radius: 13px;
+  gap: 19px;
+  display: flex
+;
+  flex-direction: column;
+}
+}
+.taglinecardoneicon {
+  width: 9%;
+  margin-left: 19px;
+}
+
 .HomeFourth{
   height: 100vh;
   display: flex;
@@ -685,186 +786,185 @@ height: 90%;
   width: 100%;
   height: 100%;
 }
-.HomeFifth{
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60vh;
+@media screen and (max-width: 1000px) {
+  .carname{
+    font-size: 10px;
+  }
 }
-.Dealinindia{
-  width: 70%;
-  height: 88%;
-  box-shadow: 0 5px 15px rgba(0,0,0,.3);
-  background-color: white;
-  display: flex
-  ;
-      justify-content: center;
-      align-items: center;
+.dealing-section {
+  padding: 4rem 0;
+  background: #f8f9fa;
 }
-.subdealing{
-  width: 95%;
-  height: 90%;
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
-.taglindealing h2{
-  font-size: 1.3rem;
-  margin-bottom: 10px;
-}
-.MainCardcity{
-  display: flex;
-      width: 100%;
-      height: 100%;
-      justify-content: space-between;
-      flex-wrap: wrap;
-}
-.cardCity{
-  box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
-  background-color: white;
-  width: 15%;
-  height: 42%;
-  display: flex
-;
-border-radius: 7px;
-  flex-direction: column;
-  margin: 0px 55px 0px 0px;
-}
-.cityimg{
-  height: 85%;
-  display: flex
-;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.cityimg img{
-  width: 90%;
-  height: 90%;
-}
-.cityname h2{
-  font-size: 1.2rem;
-  color: #6e3697;
+
+.dealing-section h2 {
   text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
 }
-.footer{
-  height: 34vh;
-  width: 100vw;
+
+.cities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.city-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.city-card:hover {
+  transform: translateY(-5px);
+}
+
+.city-image {
+  height: 150px;
   display: flex;
-  background: #422974;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
 }
-  .logoanddescripation{
-    width: 47%;
+
+.city-image img {
+  max-width: 100%;
+  max-height: 120px;
+  object-fit: contain;
+}
+
+.city-card h3 {
+  text-align: center;
+  padding: 1rem;
+  color: #6e3697;
+  font-size: 1.1rem;
+}
+.main-footer {
+  background: #422974;
+  color: white;
+  padding: 3rem 0 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.footer-column {
+  padding: 1rem;
+}
+
+.footer-logo {
+  max-width: 200px;
+  margin-bottom: 1.5rem;
+}
+
+.footer-description {
+  color: #c7a4db;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.email-contact {
+  display: flex;
+  align-items: center;
+  color: #c7a4db;
+  gap: 0.5rem;
+}
+
+.email-contact a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.email-contact:hover {
+  color: white;
+}
+
+.footer-column h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+  color: #c7a4db;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #c7a4db;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 3rem;
+  border-top: 1px solid #5a3a8a;
+}
+@media (max-width: 768px) {
+  .cities-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
-  .ourcomapny{
-    width: 21%;
+  
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
   }
-  .legeals{
-    width: 21%;
-    color: white;
-    position: relative;
+  
+  .social-icons {
+    justify-content: center;
   }
-  .legeals h2{
-    position: absolute;
-    top: 49px;
+  
+  .email-contact {
+    justify-content: center;
   }
-.socailicon{
-  width: 10%;
-  position: relative;
+}
+
+@media (max-width: 480px) {
+  .cities-grid {
+    grid-template-columns: 1fr;
   }
-  .logoanddescripation{
-    width: 47%;
+  
+  .city-card {
+    max-width: 250px;
+    margin: 0 auto;
   }
-  .logo{
-    width: 100%;
-    height: 33%;
-    position: relative;
-    }
-    .logo img{
-      position: absolute;
-      bottom: 0;
-      left: 11px;
-    }
-  .descripation{
-    height: 58%;
-    color: #c7a4db;
-    font-weight: 100;
-  }
-  .descripation p{
-    margin-left: 15px;
-    margin-right: 200px;
-    margin-top: 12px;
-  }
-  .email{
-    display: flex;
-    margin-top: 13px;
-  }
-  .email:hover{
-    cursor: pointer;
-    color: white;
-  }
-  .mailicon{
-    margin-left: 16px;
-    margin-top: 12px;
-  }
-  .email a{
-    text-decoration: none;
-    color: #c7a4db;
-  }
-  .email p{
-    margin-left: 14px;
-  }
-  .ourcomapny{
-    width: 21%;
-    position: relative;
-    color: white;
-  }
-  .ourcomapny h2{
-    position: absolute;
-    top: 49px;
-  }
-  .homemenubar{
-    position: absolute;
-    top: 88px;
-    color: #c7a4db;
-  }
-  .homemenu:hover{
-    cursor: pointer;
-    color: white;
-  }
-  .homemenu{
-    margin-bottom: 8px  }
-    .inst{
-      font-size: 1.6rem;
-      color: white;
-      position: absolute;
-      top: 26px;
-      left: 10px;
-    }
-    .facebook{
-      font-size: 1.6rem;
-      color: white;
-      position: absolute;
-      top: 26px;
-      left: 44px;
-    }
-    .facebook:hover{
-      color: #c7a4db;
-    }
-    
-    .inst:hover{
-      color: #c7a4db;
-    }
-    
-    .twitter:hover{
-      color: #c7a4db;
-    }
-    .socailicon a:hover{
-      cursor: pointer;
-    }
-    .twitter{
-      color: white;
-      font-size: 2rem;
-      position: absolute;
-      top: 19px;
-      left: 72px;
-    }
+}

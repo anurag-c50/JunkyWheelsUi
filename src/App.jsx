@@ -93,6 +93,20 @@ export default function App() {
             <input type="button" className='Loginbutton' value="Login" />
             <input type="button" className='Signupbutton' value="Signup" />
             </div>
+          </div> 
+          <div className="phonemenubar">
+            <div className='menuicon'>
+              <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E" alt="" />
+            </div>
+            <div className='threebutton'>
+            <div className="logos">
+              <img src={Applogo} alt="" />
+            </div>
+              <div className="loginsihnup">
+            <input type="button" className='Loginbutton' value="Login" />
+            <input type="button" className='Signupbutton' value="Signup" />
+            </div>
+            </div>
           </div>
         </div> 
         <div className="Headline">
@@ -129,8 +143,9 @@ export default function App() {
         </div>
         <div className="HomeSecond">
           <div className="cards">
+          <div className="tagline"><h2>Why you should choose us?</h2></div>
+
             <div className="cardsone">
-              <div className="tagline"><h2>Why you should choose us?</h2></div>
               <div className="maincard">
               <div className="subonecards">
                 <div className="taglinecardone">
@@ -140,13 +155,16 @@ export default function App() {
                 <h2>Accountability</h2>
                 </div>
                 <div className="onecardparagraph">
-                  <div className="Accountabilityimg">
-                    <img src={Accountabilityimg} alt="" />
-                  </div>
+           
+                  <div className='onecardparagraphall'>
                 <p className='onecardparagraphone'>Trust us to ensure <small> transparency and reliability </small></p>
                 <p className='onecardparagraphtwo'>making your car transaction effortless and secure</p>
                 <p className='onecardparagraphthree'>we hold ourselves to the highest standard of <small> accountability. </small> Our team is dedicated to delivering on our</p>
                 <p className='onecardparagraphfour'>promises and ensuring that every customer feels valued</p>
+                </div>
+                <div className="Accountabilityimg">
+                    <img src={Accountabilityimg} alt="" />
+                  </div>
                 </div>
               </div>
               <div className="subtwocards">
@@ -157,14 +175,18 @@ export default function App() {
                 <h2>Personalised Experience</h2>
                 </div>
                 <div className="twocardparagraph">
-                <div className="Personalisedimg">
-                    <img src={Personalityimg} alt="" />
-                  </div>
+                  <div className='twocardparagraphall'>
                 <p className='twocardparagraphtwo'>Embark on a journey <small> trailored just for you, </small>where every moment is crafted to reflect your unique desires and aspirations.</p>
                 <p className='twocardparagraphthree'>At JunkyWheels, we understand that every customer has unique need and preferences.</p>
                 <p className='twocardparagraphfour'><small>We are dedicated to provide a personalised car-buying that caters to your specific requirements.</small></p>
               </div>
-              </div>              </div>
+              <div className="Personalisedimg">
+                    <img src={Personalityimg} alt="" />
+                                  </div>              
+                                  </div>
+
+                  </div>
+              </div>
             </div>
             <div className="cardstwo">
             <div className="maincard">
@@ -176,14 +198,17 @@ export default function App() {
                 <h2>Transparency</h2>
                 </div>
                 <div className="onepartcardparagraph">
-                <div className="Transparencyimg">
-                  <img src={Transparencyimg} />
-                </div>
+         
+                <div className='onepartcardparagraphoneall'>
                 <p className='onepartcardparagraphone'>Trust in our transpaernt process for a <small>stress-free and confident</small> car buying or selling experience.</p>
                 <p className='onepartcardparagraphtwo'>Tranparency is at heart of our business. We believe in providing claer, honest information to help you make</p>
                 <p className='onepartcardparagraphthree'>informed decision</p>
                 <p className='onepartcardparagraphfour'>Every car in our inventory comes with a comprehensive history report,detailed specifications, and an in-depth inspection report.</p>
                 </div>
+                <div className="Transparencyimg">
+                  <img src={Transparencyimg} />
+                </div>
+              </div>
               </div>
               <div className="subonecards">
               <div className="taglinecardtwopart">
@@ -193,11 +218,14 @@ export default function App() {
                 <h2>Quality</h2>
                 </div>
                 <div className="twopartcardparagraph">
+       <div className='twopartcardparagraphoneall'>
+                <p className='twopartcardparagraphone'>Experience <small> seamless transaction </small> and find your perfect rider with confidence.</p>
+                <p className='twopartcardparagraphtwo'>we are committed to offering only the <small>highest quality vehicles.</small> Each car undergoes a rigorous inspection and reconditioning process to ensure it meets our strict standards. Experience</p>
+       
+                </div>
                 <div className="Qualityimg">
                   <img src={Qualityimg} />
                 </div>
-                <p className='twopartcardparagraphone'>Experience <small> seamless transaction </small> and find your perfect rider with confidence.</p>
-                <p className='twopartcardparagraphtwo'>we are committed to offering only the <small>highest quality vehicles.</small> Each car undergoes a rigorous inspection and reconditioning process to ensure it meets our strict standards. Experience</p>
                 </div>
               </div>
               </div>
@@ -346,73 +374,72 @@ export default function App() {
           </div>
           </div>
           <div className="HomeFifth">
-            <div className="Dealinindia">
-              <div className="subdealing">
-                <div className="taglindealing">
-                  <h2>Dealing across India</h2>
-                </div>
-                <div className="MainCardcity">
-              {cardcity.map((item,index)=>{return( 
-                 <div key={{index}} className="cardCity">
-                    <div className="cityimg">
-                      <img src={item.img} alt="" srcset="" />
-                    </div>
-                    <div className="cityname">
-                      <h2>{item.cityname}</h2>
-                    </div>
-                </div>)})}
-                </div>
-              </div>
-            </div>
+<div className="dealing-section">
+  <div className="container">
+    <h2>Dealing Across India</h2>
+    <div className="cities-grid">
+      {cardcity.map((city, index) => (
+        <div className="city-card" key={index}>
+          <div className="city-image">
+            <img src={city.img} alt={city.name} />
           </div>
-          <footer className='footer'>
-            <div className="logoanddescripation">
-              <div className="logo">
-                <img src={Applogo} alt="" />
-              </div>
-              <div className="descripation">
-                <p>Welcome to junky Wheels,yuor trusted partner
-                  in buying-qulity second-hand cars. We are deicated to revolutiozing
-                  the pre-owned car market by providing a seamless, transparent, and personalized car-buying experience.
-                </p>
-                <div className="email">
-                <i class="fa fa-envelope mailicon"></i>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=junkywheel24gmail.com" target="_blank"><p className='email'>junkywheel24gmail.com</p></a>
-                </div>
-              </div>
-            </div>
-            <div className="ourcomapny">
-              <h2>
-                Our Company
-              </h2>
-              <div className="homemenubar">
-                              <p className="homemenu">Home</p>
-              <p className='homemenu'>Buy a Car</p>
-              <p className='homemenu'>Sell a Car</p>
-              <p className='homemenu'>Contact Us</p>
-              </div>
+          <h3>{city.cityname}</h3>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+</div>
 
-            </div>
-            <div className="legeals">
-            <h2>
-                Legals
-              </h2>
-              <div className="homemenubar">
-                              <p className="homemenu">Privacy Policy</p>
-              <p className='homemenu'>Cookie policy</p>
-              <p className='homemenu'>Shipping Policy</p>
-              <p className='homemenu'>Terms & COnditions</p>
-              <p className='homemenu'>Return & Refund</p>
-              </div>
+<footer className="main-footer">
+  <div className="footer-container">
+    <div className="footer-column logo-column">
+      <img src={Applogo} alt="Junky Wheels" className="footer-logo" />
+      <p className="footer-description">
+        Your trusted partner in buying quality second-hand cars. 
+        Revolutionizing the pre-owned car market with transparency 
+        and personalized service.
+      </p>
+      <div className="email-contact">
+        <div className="mail-icon" />
+        <a href="mailto:contact@junkywheels.com">contact@junkywheels.com</a>
+      </div>
+    </div>
 
-            </div>
-            <div className="socailicon">
-            <a target="_blank" href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa fa-instagram inst"></i></a>             
+    <div className="footer-column">
+      <h4>Our Company</h4>
+      <ul className="footer-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/buy">Buy a Car</a></li>
+        <li><a href="/sell">Sell a Car</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div className="footer-column">
+      <h4>Legals</h4>
+      <ul className="footer-links">
+        <li><a href="/privacy">Privacy Policy</a></li>
+        <li><a href="/cookies">Cookie Policy</a></li>
+        <li><a href="/terms">Terms & Conditions</a></li>
+        <li><a href="/returns">Returns & Refunds</a></li>
+      </ul>
+    </div>
+
+    <div className="footer-column social-column">
+      <h4>Follow Us</h4>
+      <div className="social-icons">
+      <a target="_blank" href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa fa-instagram inst"></i></a>             
            <a target="_blank" href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F"><i class="fa fa-facebook-f facebook"></i></a>
            <a target="_blank" href="https://x.com/?lang=en"> <p className='twitter'>x</p></a>
-          
-            </div>
-          </footer>
+      </div>
+    </div>
+  </div>
+
+  <div className="footer-bottom">
+    <p>© {new Date().getFullYear()} Junky Wheels. All rights reserved.</p>
+  </div>
+</footer>
     </Container>
   )
 }
