@@ -403,7 +403,7 @@ padding: 19px;
 }
 .subonecards{
   width: 30%;
-  height: 90%;
+  height: auto;
   background: #ebdaff;
   border: 5px solid #d4c6e4;
   border-radius: 13px;
